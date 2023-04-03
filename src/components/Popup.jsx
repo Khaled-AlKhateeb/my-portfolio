@@ -7,7 +7,7 @@ const Popup = (props) => {
     <div className="popup">
       <div className="popup-inner">
         <button className="popup-close-btn" onClick={props.onClose}>close</button>
-        <h1>{props.name}</h1>
+        <h1 className='popup-title'>{props.name}</h1>
         <div className="popup-content-container">
           <img className="popup-image" src={props.image} alt={props.name} />
           <div className="popup-info-container">
@@ -16,9 +16,6 @@ const Popup = (props) => {
             <div className="skill-main-container">
               {props.skill.map(skillName => {
                 let style = '';
-                //if (skillName.includes('HTML')) {
-                //  style = 'html';
-                //}
                 {switch (true) {
                   case skillName.includes('HTML'):
                     style = "html"

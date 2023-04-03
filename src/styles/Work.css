@@ -3,12 +3,19 @@
 }
 
 .work-item-link {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   opacity: 0;
   transition: opacity 2s ease-in-out;
   cursor: pointer;
+  font-weight: 100;
 }
 
 .work-item-link:hover {
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .work-item-link {
+    opacity: 1;
+  }
 }
