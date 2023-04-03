@@ -3,7 +3,7 @@
 }
 
 .work-item-link {
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0;
   transition: opacity 2s ease-in-out;
   cursor: pointer;
