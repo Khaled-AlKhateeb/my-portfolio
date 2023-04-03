@@ -1,0 +1,37 @@
+.skill-container {
+  background-color: var(--Primary);
+  color: var(--Text);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  padding-inline: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.html {
+  color: var(--html);
+}
+
+.css {
+  color: var(--css);
+}
+
+.javascript {
+  color: var(--javascript);
+}
+
+.ruby {
+  color: var(--ruby);
+}
+
+.reactjs {
+  color: var(--reactjs);
+}
+
+.react-native {
+  color: var(--reactNative);
+}
+
+.redux {
+  color: var(--redux);
+}

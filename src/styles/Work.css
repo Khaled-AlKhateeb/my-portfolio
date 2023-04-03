@@ -1,0 +1,14 @@
+.work-item-container {
+  cursor: context-menu;
+}
+
+.work-item-link {
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  cursor: pointer;
+}
+
+.work-item-link:hover {
+  font-weight: 500;
+}
