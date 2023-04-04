@@ -31,20 +31,16 @@ const Home = () => {
         </div>
         <div className='about-container'>
           <p className='about-content'>
-            As an experienced developer, I offer my expertise in building
-            products, features, and websites. Please take a look at my portfolio
-            to see some of my work and experience. If you have a project that
-            requires coding, feel free to contact me to discuss your
-            requirements.
+            Full-Stack Developer, building mobile applications, websites and webapps. Completed with excellence the <span className="microverse">Microverse</span> international software development program. <br />
+            I am dedicated to deliver perfectly functional projects on time.
           </p>
         </div>
         <div className='email-container'>
-          <p>Got any questions?</p>
           <a
             className='link'
             href='#contact'
           >
-            Contact me.
+            Contact me
           </a>
         </div>
       </section>
@@ -262,16 +258,12 @@ const Home = () => {
         </form>
       </section>
       <footer className="footer-container" id="contact">
-        <SocialIcon url="https://twitter.com/KhaledA93751489" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
         <SocialIcon url="https://www.facebook.com/abu.Derp" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
         <SocialIcon url="https://github.com/Khaled-AlKhateeb" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
         <SocialIcon url="https://discord.com/channels/Freakless#6172" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
         <SocialIcon url="mailto:khaled.w.khateeb85@gmail.com" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://www.instagram.com/abu.derp/" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
         <SocialIcon url="https://www.linkedin.com/in/khaled-w-al-khateeb/" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
         <SocialIcon url="https://medium.com/@khaled.w.khateeb85" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://www.pinterest.com/steam2dota2/" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://www.reddit.com/user/KayKhateeb" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
       </footer>
     </div>
   );

@@ -1,37 +1,42 @@
 .skill-container {
-  background-color: var(--Primary);
-  color: var(--Text);
-  border-radius: 0.5rem;
-  padding: 0.2rem;
-  padding-inline: 1rem;
-  font-size: 1.3rem;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--Primary);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
 .html {
-  color: var(--html);
+  background-color: var(--html);
 }
 
 .css {
-  color: var(--css);
+  background-color: var(--css);
 }
 
 .javascript {
-  color: var(--javascript);
+  background-color: var(--javascript);
 }
 
 .ruby {
-  color: var(--ruby);
+  background-color: var(--ruby);
 }
 
 .reactjs {
-  color: var(--reactjs);
+  background-color: var(--reactjs);
 }
 
 .react-native {
-  color: var(--reactNative);
+  background-color: var(--reactNative);
 }
 
 .redux {
-  color: var(--redux);
+  background-color: var(--redux);
 }

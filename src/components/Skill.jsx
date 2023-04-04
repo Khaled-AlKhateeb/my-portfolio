@@ -3,8 +3,8 @@ import '../styles/Skill.css';
 
 const Skill = (props) => {
   return (
-    <div className={`skill-container ${props.style}`}>
-      {props.skillName}
+    <div className="skill-container">
+     <div className={`dot ${props.style}`} /> {props.skillName}
     </div>
   );
 };
