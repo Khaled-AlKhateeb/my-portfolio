@@ -152,6 +152,12 @@ li {
   cursor: pointer;
 }
 
+.works-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--Hover);
+}
+
 .works-main-title:hover .work-item-link {
   opacity: 1;
 }
@@ -244,5 +250,17 @@ li {
 @media screen and (max-width: 768px) {
   .main-info-container {
     width: 100%;
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .main-title {
+    margin: 0;
+  }
+
+  .about-content {
+    width: 90%;
   }
 }

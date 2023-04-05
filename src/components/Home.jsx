@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from "react-social-icons";
 import dotaRoshanTimer from "../assets/dota-roshan-timer.png";
 import Webycob from "../assets/Webycob-Screenshot.png";
 import flappyBird from "../assets/flappy-bird-clone-screenshot.jpeg";
@@ -23,7 +23,7 @@ const Home = () => {
     <div className='main-container'>
       <section className='main-info-container'>
         <div className='title-container'>
-          <h1 className='main-title'>Hi, I'm Khaled Al Khateeb</h1>
+          <h1 className='main-title'>Hi, I'm Khaled Al-Khateeb</h1>
           <div
             className='robot'
             data-hover='&#x1F916;'
@@ -31,8 +31,11 @@ const Home = () => {
         </div>
         <div className='about-container'>
           <p className='about-content'>
-            Full-Stack Developer, building mobile applications, websites and webapps. Completed with excellence the <span className="microverse">Microverse</span> international software development program. <br />
-            I am dedicated to deliver perfectly functional projects on time.
+            Full-Stack Developer, building mobile applications, websites and
+            webapps. Completed with excellence the{" "}
+            <span className='microverse'>Microverse</span> international
+            software development program. <br />I am dedicated to deliver
+            perfectly functional projects on time.
           </p>
         </div>
         <div className='email-container'>
@@ -46,7 +49,7 @@ const Home = () => {
       </section>
       <section className='works-main-container'>
         <ul className='works-main-title'>
-          Recent work
+          <h3 className="works-title">Recent work</h3>
           <Work
             name='Air Pollution'
             image={airPollution}
@@ -219,9 +222,7 @@ const Home = () => {
             id='nameInput'
             className='input'
             type='text'
-            maxlength='30'
             name='name'
-            onfocusout='nameStorage()'
             placeholder='Full Name'
             required
           />
@@ -230,7 +231,6 @@ const Home = () => {
             className='input'
             type='email'
             name='email'
-            onfocusout='emailStorage()'
             placeholder='Email address'
             required
           />
@@ -238,13 +238,10 @@ const Home = () => {
             id='areaInput'
             className='input textarea'
             name='message'
-            maxlength='500'
-            onfocusout='areaStorage()'
             placeholder='Enter text here'
             required
           ></textarea>
           <button
-            onclick='submitForm()'
             id='formSubmit'
             className='form-btn'
             type='submit'
@@ -257,13 +254,40 @@ const Home = () => {
           ></span>
         </form>
       </section>
-      <footer className="footer-container" id="contact">
-        <SocialIcon url="https://www.facebook.com/abu.Derp" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://github.com/Khaled-AlKhateeb" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://discord.com/channels/Freakless#6172" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="mailto:khaled.w.khateeb85@gmail.com" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://www.linkedin.com/in/khaled-w-al-khateeb/" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
-        <SocialIcon url="https://medium.com/@khaled.w.khateeb85" bgColor="var(--Text)" style={{ height: 35, width: 35 }} />
+      <footer
+        className='footer-container'
+        id='contact'
+      >
+        <SocialIcon
+          url='https://www.facebook.com/abu.Derp'
+          bgColor='var(--Text)'
+          style={{ height: 35, width: 35 }}
+        />
+        <SocialIcon
+          url='https://github.com/Khaled-AlKhateeb'
+          bgColor='var(--Text)'
+          style={{ height: 35, width: 35 }}
+        />
+        <SocialIcon
+          url='https://discord.com/channels/Freakless#6172'
+          bgColor='var(--Text)'
+          style={{ height: 35, width: 35 }}
+        />
+        <SocialIcon
+          url='mailto:khaled.w.khateeb85@gmail.com'
+          bgColor='var(--Text)'
+          style={{ height: 35, width: 35 }}
+        />
+        <SocialIcon
+          url='https://www.linkedin.com/in/khaled-w-al-khateeb/'
+          bgColor='var(--Text)'
+          style={{ height: 35, width: 35 }}
+        />
+        <SocialIcon
+          url='https://medium.com/@khaled.w.khateeb85'
+          bgColor='var(--Text)'
+          style={{ height: 35, width: 35 }}
+        />
       </footer>
     </div>
   );

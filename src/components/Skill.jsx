@@ -3,7 +3,7 @@ import '../styles/Skill.css';
 
 const Skill = (props) => {
   return (
-    <div className="skill-container">
+    <div className="popup-skill-container">
      <div className={`dot ${props.style}`} /> {props.skillName}
     </div>
   );
