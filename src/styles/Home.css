@@ -20,7 +20,6 @@ li {
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  /*box-shadow: 0 25px 50px -2px var(--Secondary);*/
 }
 
 .title-container {
@@ -158,8 +157,78 @@ li {
   color: var(--Hover);
 }
 
+.web-apps {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  max-width: 36rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.web-app-title,
+.web-sites-title {
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 100;
+  color: var(--Text);
+  margin: 0;
+  position: relative;
+  width: 0;
+  border-bottom: 1px solid var(--Text);
+  transition: all 2s ease-in-out;
+}
+
+.web-app-title {
+  text-align: left;
+}
+
+.web-sites-title {
+  text-align: right;
+}
+
+/*.web-app-title:before,
+.web-sites-title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  animation: border_anim 2s linear forwards;
+}
+
+.web-app-title:before {
+  right: 0;
+}
+
+.web-sites-title:before {
+  left: 0;
+}*/
+
+/*@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}*/
+
 .works-main-title:hover .work-item-link {
   opacity: 1;
+}
+
+.works-main-title:hover .web-apps {
+  opacity: 1;
+}
+
+.works-main-title:hover .web-app-title {
+  width: 100%;
+}
+
+.works-main-title:hover .web-sites-title {
+  width: 100%;
 }
 
 .skills-container {
@@ -262,5 +331,9 @@ li {
 
   .about-content {
     width: 90%;
+  }
+
+  .web-apps {
+    opacity: 1;
   }
 }

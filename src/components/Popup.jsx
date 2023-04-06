@@ -55,7 +55,6 @@ const Popup = ({handleClose, name, image, production, description, skill, url}) 
         >
           close
         </button>
-        <h1 className='popup-title'>{name}</h1>
         <div className='popup-content-container'>
           <img
             className='popup-image'
@@ -63,6 +62,7 @@ const Popup = ({handleClose, name, image, production, description, skill, url}) 
             alt={name}
           />
           <div className='popup-info-container'>
+            <h1 className='popup-title'>{name}</h1>
             <p className='popup-info-production'>{production}</p>
             <p className='popup-info-description'>{description}</p>
             <div className='skill-main-container'>

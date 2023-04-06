@@ -11,10 +11,6 @@
   margin-bottom: 0;
 }
 
-.work-item-link:hover {
-  font-weight: 500;
-}
-
 @media screen and (max-width: 768px) {
   .work-item-link {
     opacity: 1;

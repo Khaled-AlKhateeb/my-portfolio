@@ -62,6 +62,10 @@
   width: 40%;
 }
 
+.popup-title {
+  text-align: start;
+}
+
 .popup-info-production {
   font-size: 0.9rem;
   text-align: left;
