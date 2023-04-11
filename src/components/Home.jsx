@@ -132,7 +132,7 @@ const Home = () => {
             />
           </div>
           <div className='web-apps'>
-            <h4 className='web-sites-title'>Websites</h4>
+            <h4 className='web-sites-title' dir='rtl'>Websites</h4>
             <Work
               name='Dota Timer'
               image={dotaRoshanTimer}
