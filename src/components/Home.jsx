@@ -17,7 +17,6 @@ import ownTracker from "../assets/own-tracker.png";
 import budgetControl from "../assets/budgetControl.png";
 
 import Work from "./Work";
-
 const Home = () => {
   return (
     <div className='main-container'>
@@ -83,6 +82,8 @@ const Home = () => {
                 "Redux",
               ]}
               url='https://bookstore-iota-puce.vercel.app/'
+              urlSource='https://github.com/Khaled-AlKhateeb/bookstore'
+
             />
             <Work
               name='Budget Control'
@@ -98,6 +99,7 @@ const Home = () => {
                 "Shell 1%",
               ]}
               url='https://budget-control.onrender.com/'
+              urlSource='https://github.com/Khaled-AlKhateeb/Budget_Capstone'
             />
             <Work
               name='List Structure'
@@ -106,6 +108,7 @@ const Home = () => {
               description='Simple HTML/CSS/JavaScript project to add tasks to the to-do list using webpack.'
               skill={["HTML 11%", "CSS 14%", "JavaScript 75%"]}
               url='https://khaled-alkhateeb.github.io/list-structure/dist/'
+              urlSource='https://github.com/Khaled-AlKhateeb/list-structure'
             />
             <Work
               name='Media Tracker (Backend)'
@@ -114,6 +117,7 @@ const Home = () => {
               description='A console app that helps keeping records of different types of things you own: books, music albums, movies, and games. Follow link and read instructions in the README.md file for a try.'
               skill={["Ruby", "SQL"]}
               url='https://github.com/Khaled-AlKhateeb/Ruby-capstone'
+              urlSource='https://github.com/Khaled-AlKhateeb/Ruby-capstone'
             />
             <Work
               name='School Library (Backend)'
@@ -123,6 +127,7 @@ const Home = () => {
               Follow link and read instructions in the README.md file for a try.'
               skill={["Ruby", "SQL"]}
               url='https://github.com/Khaled-AlKhateeb/OOP_School_Library'
+              urlSource='https://github.com/Khaled-AlKhateeb/OOP_School_Library'
             />
             <Work
               name='YouFlex'
@@ -131,6 +136,7 @@ const Home = () => {
               description="A capstone JavaScript application that utilises 2 APIs to display movies and enables users to like and comment on their favourate movies. The application consists of the Homepage that contains the list of movies and a popup window that displays details of a specific movie, it's likes and comments."
               skill={["HTML 16%", "CSS 24%", "JavaScript 60%"]}
               url='https://khaled-alkhateeb.github.io/YouFlex/'
+              urlSource='https://github.com/Khaled-AlKhateeb/YouFlex'
             />
           </div>
           <div className='web-apps'>
@@ -142,6 +148,7 @@ const Home = () => {
               description='My first JavaScript project, applying a fully functional clock with 3 alarm inputs.'
               skill={["HTML 20%", "CSS 16%", "JavaScript 64%"]}
               url='https://khaled-alkhateeb.github.io/dota-timer/'
+              urlSource='https://github.com/Khaled-AlKhateeb/dota-timer'
             />
             <Work
               name='Math Magicians'
@@ -150,6 +157,7 @@ const Home = () => {
               description='My first calculator app, created using react.'
               skill={["HTML 12%", "CSS 15%", "JavaScript 73%", "ReactJS"]}
               url='https://math-magicians-teal.vercel.app/calculator'
+              urlSource='https://github.com/Khaled-AlKhateeb/math-magicians'
             />
             <Work
               name='Motor Tech'
@@ -158,6 +166,7 @@ const Home = () => {
               description='Mockup website for showing the latest motor technologies, unpublished under-construction.'
               skill={["HTML 41%", "CSS 38%", "JavaScript 21%"]}
               url='https://khaled-alkhateeb.github.io/motor-tech/'
+              urlSource='https://github.com/Khaled-AlKhateeb/motor-tech'
             />
             <Work
               name='Sippar Pharma'
@@ -166,6 +175,7 @@ const Home = () => {
               description='Static website for an iraqy pharmaceutical factory, should be dynamic by the start of 2024.'
               skill={["HTML 4%", "CSS 40%", "JavaScript 56%", "ReactJS"]}
               url='https://sipparpharma.com/'
+              urlSource='https://github.com/Khaled-AlKhateeb/sippar-react'
             />
             <Work
               name='Webycob'
@@ -174,6 +184,7 @@ const Home = () => {
               description='My first HTML/ CSS project, just built it to experience the knowledge.'
               skill={["HTML 74%", "CSS 26%"]}
               url='https://khaled-alkhateeb.github.io/Webycob/'
+              urlSource='https://github.com/Khaled-AlKhateeb/Webycob'
             />
           </div>
           <div className='web-apps'>
@@ -185,6 +196,7 @@ const Home = () => {
               description='Recreating Flappy bird mobile game using react-native for practice.'
               skill={["React-Native"]}
               url='https://drive.google.com/file/d/1gz-KyRek6d9_cOvRttYEugGk0Xk-18f8/view'
+              urlSource='https://github.com/Khaled-AlKhateeb/flappybird_clone'
             />
           </div>
         </ul>
