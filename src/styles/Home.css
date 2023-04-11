@@ -33,7 +33,7 @@ li {
 
 .main-title {
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 400;
   color: var(--Hover);
 }
 
@@ -217,7 +217,7 @@ li {
 
 .skills-title {
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 400;
   color: var(--Hover);
 }
 
