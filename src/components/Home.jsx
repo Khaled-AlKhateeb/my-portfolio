@@ -59,6 +59,7 @@ const Home = () => {
               description='Air Pollution is a web app that tracks Air Quality worldwide. It uses the Air Pollution API from Open Weather Map, which gives realtime updated air pollution statistics'
               skill={["HTML 8%", "CSS 24%", "JavaScript 68%", "ReactJS"]}
               url='https://airpollution-capstone.vercel.app/'
+              urlSource='https://github.com/Khaled-AlKhateeb/airpollution-capstone'
             />
             <Work
               name='Awesome Books'
@@ -67,6 +68,7 @@ const Home = () => {
               description='A book library tool built using JavaScript ES6.'
               skill={["HTML 1%", "CSS 1%", "JavaScript 98%"]}
               url='https://khaled-alkhateeb.github.io/awesome-books-ES6/'
+              urlSource='https://github.com/Khaled-AlKhateeb/awesome-books-ES6'
             />
             <Work
               name='Book store'

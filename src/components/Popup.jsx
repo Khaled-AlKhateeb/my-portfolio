@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Skill from "./Skill";
 import "../styles/Popup.css";
 
-const Popup = ({handleClose, name, image, production, description, skill, url}) => {
+const Popup = ({handleClose, name, image, production, description, skill, url, urlSource}) => {
   const popupRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -107,6 +107,12 @@ const Popup = ({handleClose, name, image, production, description, skill, url}) 
               href={url}
             >
               Visit Site
+            </a>
+            <a
+              className='popup-link'
+              href={urlSource}
+            >
+              Source
             </a>
           </div>
         </div>

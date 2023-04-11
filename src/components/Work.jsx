@@ -55,6 +55,7 @@ const Work = (props) => {
           description={props.description}
           skill={props.skill}
           url={props.url}
+          urlSource={props.urlSource}
           handleClose={handleClose}
         />
       )}
