@@ -3,8 +3,8 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--Primary);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: 100;
 }
 
 .dot {
