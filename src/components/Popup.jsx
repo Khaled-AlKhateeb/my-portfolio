@@ -5,7 +5,6 @@ import "../styles/Popup.css";
 const Popup = ({handleClose, name, image, production, description, skill, url, urlSource}) => {
   const popupRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const checkWindowSize = () => {
       if (window.innerWidth <= 768) {
@@ -56,11 +55,13 @@ const Popup = ({handleClose, name, image, production, description, skill, url, u
           close
         </button>
         <div className='popup-content-container'>
-          <img
-            className='popup-image'
-            src={image}
-            alt={name}
-          />
+          <div className="image-container">
+            <img
+              className='popup-image'
+              src={image}
+              alt={name}
+            />
+          </div>
           <div className='popup-info-container'>
             <h1 className='popup-title'>{name}</h1>
             <p className='popup-info-production'>{production}</p>
