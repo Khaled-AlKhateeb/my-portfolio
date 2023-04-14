@@ -1,0 +1,158 @@
+const data = [
+  {
+    id: 1,
+    type: 'webapp',
+    name: 'Air Pollution',
+    image: 'air-pollution.png',
+    production: 'Nov 2022',
+    description: 'Air Pollution is a web app that tracks Air Quality worldwide. It uses the Air Pollution API from Open Weather Map, which gives realtime updated air pollution statistics',
+    skill: ["HTML 8%", "CSS 24%", "JavaScript 68%", "ReactJS"],
+    url: 'https://airpollution-capstone.vercel.app/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/airpollution-capstone'
+  },
+  {
+    id: 2,
+    type: 'webapp',
+    name: 'Awesome Books',
+    image: 'awesome-books.png',
+    production: 'Sep 2022',
+    description: 'A book library tool built using JavaScript ES6.',
+    skill: ["HTML 1%", "CSS 1%", "JavaScript 98%"],
+    url: 'https://khaled-alkhateeb.github.io/awesome-books-ES6/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/awesome-books-ES6',
+  },
+  {
+    id: 3,
+    type: 'webapp',
+    name: 'Book store',
+    image: 'book-store.png',
+    production: 'Nov 2022',
+    description: 'Book reading assist webapp built using React.js and Redux, still ,under-construction.',
+    skill: ["HTML 12%", "CSS 23%", "JavaScript 65%", "ReactJS", "Redux"],
+    url: 'https://bookstore-iota-puce.vercel.app/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/bookstore'
+  },
+  {
+    id: 4,
+    type: 'webapp',
+    name: 'Budget Control',
+    image: 'budgetControl.png',
+    production: 'Feb 2023',
+    description: 'Budget Control is a mobile web application that can helps you keep track of your daily financial transaction and manage your budget where you have a list of transactions associated with a category, so that you can see how much money you spent on what.',
+    skill: ["HTML 22%", "SCSS 2%", "JavaScript 2%", "Ruby on Rails 70%", "Batchfile 4%", "Shell 1%"],
+    url: 'https://budget-control.onrender.com/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/Budget_Capstone'
+  },
+  {
+    id: 5,
+    type: 'webapp',
+    name: 'List Structure',
+    image: 'list-structure.png',
+    production: 'Sep 2022',
+    description: 'Simple HTML/CSS/JavaScript project to add tasks to the to-do list using webpack.',
+    skill: ["HTML 11%", "CSS 14%", "JavaScript 75%"],
+    url: 'https://khaled-alkhateeb.github.io/list-structure/dist/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/list-structure'
+  },
+  {
+    id: 6,
+    type: 'webapp',
+    name: 'Media Tracker (Backend)',
+    image: 'own-tracker.png',
+    production: 'Jan 2023',
+    description: 'A console app that helps keeping records of different types of things you own: books, music albums, movies, and games. Follow link and read instructions in the README.md file for a try.',
+    skill: ["Ruby", "SQL"],
+    url: 'https://github.com/Khaled-AlKhateeb/Ruby-capstone',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/Ruby-capstone',
+  },
+  {
+    id: 7,
+    type: 'webapp',
+    name: 'School Library (Backend)',
+    image: 'school-library.png',
+    production: 'Jan 2023',
+    description: 'A tool to record what books are in the library and who borrows them Follow link and read instructions in the README.md file for a try.',
+    skill: ["Ruby", "SQL"],
+    url: 'https://github.com/Khaled-AlKhateeb/OOP_School_Library',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/OOP_School_Library'
+  },
+  {
+    id: 8,
+    type: 'webapp',
+    name: 'YouFlex',
+    image: 'youflex.png',
+    production: 'Oct 2022',
+    description: "A capstone JavaScript application that utilises 2 APIs to display movies and enables users to like and comment on their favourate movies. The application consists of the Homepage that contains the list of movies and a popup window that displays details of a specific movie, it's likes and comments.",
+    skill: ["HTML 16%", "CSS 24%", "JavaScript 60%"],
+    url: 'https://khaled-alkhateeb.github.io/YouFlex/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/YouFlex'
+  },
+  {
+    id: 9,
+    type: 'website',
+    name: 'Dota Timer',
+    image: 'dota-roshan-timer.png',
+    production: 'Sep 2021',
+    description: 'My first JavaScript project, applying a fully functional clock with 3 alarm inputs.',
+    skill: ["HTML 20%", "CSS 16%", "JavaScript 64%"],
+    url: 'https://khaled-alkhateeb.github.io/dota-timer/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/dota-timer'
+  },
+  {
+    id: 10,
+    type: 'website',
+    name: 'Math Magicians',
+    image: 'math-magicians.png',
+    production: 'Oct 2022',
+    description: 'My first calculator app, created using react.',
+    skill: ["HTML 12%", "CSS 15%", "JavaScript 73%", "ReactJS"],
+    url: 'https://math-magicians-teal.vercel.app/calculator',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/math-magicians'
+  },
+  {
+    id: 11,
+    type: 'website',
+    name: 'Motor Tech',
+    image: 'motor-tech.png',
+    production: 'Sep 2022',
+    description: 'Mockup website for showing the latest motor technologies, unpublished under-construction.',
+    skill: ["HTML 41%", "CSS 38%", "JavaScript 21%"],
+    url: 'https://khaled-alkhateeb.github.io/motor-tech/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/motor-tech'
+  },
+  {
+    id: 12,
+    type: 'website',
+    name: 'Sippar Pharma',
+    image: 'sippar-pharma.png',
+    production: 'Nov 2022',
+    description: 'Static website for an iraqy pharmaceutical factory, should be dynamic by the start of 2024.',
+    skill: ["HTML 4%", "CSS 40%", "JavaScript 56%", "ReactJS"],
+    url: 'https://sipparpharma.com/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/sippar-react'
+  },
+  {
+    id: 13,
+    type: 'website',
+    name: 'Webycob',
+    image: 'Webycob-Screenshot.png',
+    production: 'Oct 2021',
+    description: 'My first HTML/ CSS project, just built it to experience the knowledge.',
+    skill: ["HTML 74%", "CSS 26%"],
+    url: 'https://khaled-alkhateeb.github.io/Webycob/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/Webycob'
+  },
+  {
+    id: 14,
+    type: 'mobileapp',
+    name: 'Flappy Bird Clone',
+    image: 'flappy-bird-clone-screenshot.jpeg',
+    production: 'May 2022',
+    description: 'Recreating Flappy bird mobile game using react-native for practice.',
+    skill: ["React-Native"],
+    url: 'https://drive.google.com/file/d/1gz-KyRek6d9_cOvRttYEugGk0Xk-18f8/view',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/flappybird_clone',
+  }
+];
+
+export default data;
