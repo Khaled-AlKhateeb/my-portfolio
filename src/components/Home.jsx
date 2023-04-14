@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Home.css";
 import { SocialIcon } from "react-social-icons";
-import dotaRoshanTimer from "../assets/dota-roshan-timer.png";
+import dotaRoshanTimer from '../assets/dota-roshan-timer.png'
 import Webycob from "../assets/Webycob-Screenshot.png";
 import flappyBird from "../assets/flappy-bird-clone-screenshot.jpeg";
 import motorTech from "../assets/motor-tech.png";
@@ -51,7 +51,7 @@ const Home = () => {
             <h4 className='web-app-title'>WebApps</h4>
             <Work
               name='Air Pollution'
-              image={airPollution}
+              //image={airPollution}
               production='Nov 2022'
               description='Air Pollution is a web app that tracks Air Quality worldwide. It uses the Air Pollution API from Open Weather Map, which gives realtime updated air pollution statistics'
               skill={["HTML 8%", "CSS 24%", "JavaScript 68%", "ReactJS"]}

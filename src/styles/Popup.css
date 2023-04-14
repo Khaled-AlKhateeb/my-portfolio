@@ -41,6 +41,86 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 1rem;
+}
+
+.box {
+  border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+
+.box:before {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  content: "";
+  background: #000;
+  top: -4px;
+  left: -4px;
+  transition: 500ms width ease 500ms;
+  -web-kit-transition: 500ms width ease 500ms;
+}
+
+.box:after {
+  position: absolute;
+  width: 4px;
+  height: 0;
+  content: "";
+  background: #000;
+  top: -4px;
+  right: -4px;
+  transition: 500ms height ease 500ms;
+  -web-kit-transition: 500ms height ease 500ms;
+}
+
+.box-inner:after {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  content: "";
+  background: #000;
+  bottom: 4px;
+  right: -4px;
+  transition: 500ms width ease 500ms;
+  -web-kit-transition: 500ms width ease 500ms;
+}
+
+.box-inner:before {
+  position: absolute;
+  width: 4px;
+  height: 0;
+  content: "";
+  background: #000;
+  bottom: 4px;
+  left: -4px;
+  transition: 500ms height ease 500ms;
+  -web-kit-transition: 500ms height ease 500ms;
+}
+
+.box.visible:before {
+  width: calc(100% + 4px);
+  transition: 500ms width ease 500ms;
+  -web-kit-transition: 500ms width ease 500ms;
+}
+
+.box.visible:after {
+  height: 100%;
+  transition: 500ms height ease 500ms;
+  -web-kit-transition: 500ms height ease 500ms;
+}
+
+.box.visible .box-inner:after {
+  width: calc(100% + 4px);
+  transition: 500ms width ease 500ms;
+  -web-kit-transition: 500ms width ease 500ms;
+}
+
+.box.visible .box-inner:before {
+  height: 100%;
+  transition: 500ms height ease 500ms;
+  -web-kit-transition: 500ms height ease 500ms;
 }
 
 .image-container {
@@ -50,7 +130,6 @@
 .popup-image {
   width: 100%;
   height: fit-content;
-  border-radius: 0.5rem;
 }
 
 .popup-info-container {
@@ -152,5 +231,10 @@
 
   .popup-image {
     width: 100%;
+  }
+
+  .popup-link {
+    white-space: nowrap;
+    width: 40%;
   }
 }

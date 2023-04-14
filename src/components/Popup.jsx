@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 import Skill from "./Skill";
 import "../styles/Popup.css";
 
@@ -42,6 +43,8 @@ const Popup = ({handleClose, name, image, production, description, skill, url, u
     handleClose();
   };
 
+  const [ref, inView] = useInView({ threshold: 0.5 });
+  
   return (
     <div
       className='popup'
@@ -55,12 +58,14 @@ const Popup = ({handleClose, name, image, production, description, skill, url, u
           close
         </button>
         <div className='popup-content-container'>
-          <div className="image-container">
-            <img
-              className='popup-image'
-              src={image}
-              alt={name}
-            />
+          <div className={`box ${inView ? 'visible' : ''}`} ref={ref}>
+            <div className="box-inner">
+              <img
+                className='popup-image'
+                src={image}
+                alt={name}
+              />
+            </div>
           </div>
           <div className='popup-info-container'>
             <h1 className='popup-title'>{name}</h1>
