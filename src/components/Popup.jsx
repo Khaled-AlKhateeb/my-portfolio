@@ -1,44 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import Skill from "./Skill";
 import "../styles/Popup.css";
 
 const Popup = ({handleClose, name, image, production, description, skill, url, urlSource}) => {
-  const popupRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const checkWindowSize = () => {
-      if (window.innerWidth <= 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-    checkWindowSize();
-    window.addEventListener('resize', checkWindowSize);
-    return () => window.removeEventListener('resize', checkWindowSize);
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (popupRef.current && !popupRef.current.contains(event.target)) {
-        handleClose();
-      }
-    };
-    if (isMobile) {
-      document.addEventListener('touchstart', handleClickOutside);
-    } else {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-    return () => {
-      if (isMobile) {
-        document.removeEventListener('touchstart', handleClickOutside);
-      } else {
-        document.removeEventListener('mousedown', handleClickOutside);
-      }
-    };
-  }, [isMobile, handleClose]);
-
   const handleCloseButton = () => {
     handleClose();
   };
@@ -48,7 +13,6 @@ const Popup = ({handleClose, name, image, production, description, skill, url, u
   return (
     <div
       className='popup'
-      ref={popupRef}
     >
       <div className='popup-inner'>
         <button
