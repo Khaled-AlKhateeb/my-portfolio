@@ -1,22 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Home.css";
 import { SocialIcon } from "react-social-icons";
-//import dotaRoshanTimer from "../assets/dota-roshan-timer.png";
-//import Webycob from "../assets/Webycob-Screenshot.png";
-//import flappyBird from "../assets/flappy-bird-clone-screenshot.jpeg";
-//import motorTech from "../assets/motor-tech.png";
-//import awesomeBooks from "../assets/awesome-books.png";
-//import listStructure from "../assets/list-structure.png";
-//import mathMagicians from "../assets/math-magicians.png";
-//import bookStore from "../assets/book-store.png";
-//import youFlex from "../assets/youflex.png";
-//import airPollution from "../assets/air-pollution.png";
-//import sipparPharma from "../assets/sippar-pharma.png";
-//import schoolLibrary from "../assets/school-library.png";
-//import ownTracker from "../assets/own-tracker.png";
-//import budgetControl from "../assets/budgetControl.png";
 import data from "../data";
-
 import Work from "./Work";
 import Popup from "./Popup";
 

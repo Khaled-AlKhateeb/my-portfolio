@@ -81,7 +81,7 @@
   height: 4px;
   content: "";
   background: #000;
-  bottom: 4px;
+  bottom: 0;
   right: -4px;
   transition: 500ms width ease 500ms;
   -web-kit-transition: 500ms width ease 500ms;
@@ -112,7 +112,7 @@
 }
 
 .box.visible .box-inner:after {
-  width: calc(100% + 4px);
+  width: calc(100% + 8px);
   transition: 500ms width ease 500ms;
   -web-kit-transition: 500ms width ease 500ms;
 }
