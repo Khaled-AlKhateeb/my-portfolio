@@ -10,11 +10,29 @@
   --reactNative: #045588;
   --redux: #7248b6;
   --Secondary: #424242;
-  font-family: Ubuntu, sans-serif;
+  font-family: 'Ubuntu';
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu-M.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu-R.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu-Th.ttf') format('truetype');
+  font-weight: lighter;
 }
