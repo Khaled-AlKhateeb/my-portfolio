@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import "../styles/Home.css";
 import { SocialIcon } from "react-social-icons";
 import data from "../data";
@@ -7,7 +8,8 @@ import Popup from "./Popup";
 
 const Home = () => {
   const [activePopup, setActivePopup] = useState(null);
-  
+  const [ref, inView] = useInView({ threshold: 0.5 });
+
   const handleClose = () => {
     setActivePopup(null);
   };
@@ -16,10 +18,7 @@ const Home = () => {
     <div className='main-container'>
       <section className='main-info-container'>
         <h1 className='main-title'>Hi, I'm Khaled Al-Khateeb</h1>
-        <div
-          className='robot'
-          data-hover='&#x1F916;'
-        ></div>
+        <img src="./pacman.gif" alt="Pacman eating" className="pacman" />
         <div className='about-container'>
           <p className='about-content'>
             Full-Stack Developer, building mobile applications, websites and
@@ -39,7 +38,7 @@ const Home = () => {
         </div>
       </section>
       <section className='works-main-container'>
-        <div className='works-main-title'>
+        <div className={`works-main-title ${inView ? 'visible' : ''}`} ref={ref}>
           <h3 className='works-title'>Recent Works</h3>
           <div className='web-apps'>
             <h4 className='web-app-title'>WebApps</h4>
