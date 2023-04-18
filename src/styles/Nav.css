@@ -1,0 +1,17 @@
+.nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  color: var(--Hover);
+  background-color: var(--Primary);
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--Hover);
+}
+
+.nav-btn {
+  color: var(--Hover);
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}

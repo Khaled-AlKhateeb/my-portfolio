@@ -74,13 +74,15 @@ const Popup = ({handleClose, name, image, production, description, skill, url, u
             </div>
           </div>
         </div>
-            <div className="links-container">
+        <div className="links-container">
+          {url ? 
               <a
                 className='popup-link'
                 href={url}
               >
                 Visit Site
-              </a>
+              </a> : null
+          }
               <a
                 className='popup-link'
                 href={urlSource}

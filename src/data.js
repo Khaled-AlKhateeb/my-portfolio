@@ -62,7 +62,6 @@ const data = [
     production: 'Jan 2023',
     description: 'A console app that helps keeping records of different types of things you own: books, music albums, movies, and games. Follow link and read instructions in the README.md file for a try.',
     skill: ["Ruby", "SQL"],
-    url: 'https://github.com/Khaled-AlKhateeb/Ruby-capstone',
     urlSource: 'https://github.com/Khaled-AlKhateeb/Ruby-capstone',
   },
   {
@@ -73,7 +72,6 @@ const data = [
     production: 'Jan 2023',
     description: 'A tool to record what books are in the library and who borrows them Follow link and read instructions in the README.md file for a try.',
     skill: ["Ruby", "SQL"],
-    url: 'https://github.com/Khaled-AlKhateeb/OOP_School_Library',
     urlSource: 'https://github.com/Khaled-AlKhateeb/OOP_School_Library'
   },
   {

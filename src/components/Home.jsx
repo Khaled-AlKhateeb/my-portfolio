@@ -43,7 +43,7 @@ const Home = () => {
           <div className='web-apps'>
             <h4 className='web-app-title'>WebApps</h4>
             {data.map((work, index) => {
-              if (work.type == "webapp") {
+              if (work.type === "webapp") {
                 return (
                   <Work
                     openPopup={() => setActivePopup(index)}
@@ -52,6 +52,7 @@ const Home = () => {
                   />
                 );
               }
+              return null;
             })}
           </div>
           <div className='web-apps'>
@@ -62,7 +63,7 @@ const Home = () => {
               Websites
             </h4>
             {data.map((work, index) => {
-              if (work.type == "website") {
+              if (work.type === "website") {
                 return (
                   <Work
                     openPopup={() => setActivePopup(index)}
@@ -71,12 +72,13 @@ const Home = () => {
                   />
                 );
               }
+              return null;
             })}
           </div>
           <div className='web-apps'>
             <h4 className='web-app-title'>Mobile Apps</h4>
             {data.map((work, index) => {
-              if (work.type == "mobileapp") {
+              if (work.type === "mobileapp") {
                 return (
                   <Work
                     openPopup={() => setActivePopup(index)}
@@ -85,6 +87,7 @@ const Home = () => {
                   />
                 );
               }
+              return null;
             })}
           </div>
         </div>
@@ -109,7 +112,7 @@ const Home = () => {
       ))}
       <section className='skills-container'>
         <div className='skills-main-container'>
-          <h2 className='skills-title'>Languages</h2>
+          <h2 className='skills-title' id="language">Languages</h2>
           <p className='skill'>CSS</p>
           <p className='skill'>HTML</p>
           <p className='skill'>JavaScript</p>
@@ -118,7 +121,7 @@ const Home = () => {
           <p className='skill'>SQL</p>
         </div>
         <div className='skills-main-container'>
-          <h2 className='skills-title'>Frameworks</h2>
+          <h2 className='skills-title' id="frameworks">Frameworks</h2>
           <p className='skill'>Bootstrap</p>
           <p className='skill'>Node.js</p>
           <p className='skill'>React.js</p>
@@ -127,7 +130,7 @@ const Home = () => {
           <p className='skill'>Tailwind</p>
         </div>
         <div className='skills-main-container'>
-          <h2 className='skills-title'>Tools & Technologies</h2>
+          <h2 className='skills-title' id="tools">Tools & Technologies</h2>
           <p className='skill'>Git</p>
           <p className='skill'>GitHub</p>
           <p className='skill'>HTML5</p>
