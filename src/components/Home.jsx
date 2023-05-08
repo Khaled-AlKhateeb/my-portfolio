@@ -191,11 +191,6 @@ const Home = () => {
         id='contact'
       >
         <SocialIcon
-          url='https://www.facebook.com/abu.Derp'
-          bgColor='var(--Text)'
-          style={{ height: 35, width: 35 }}
-        />
-        <SocialIcon
           url='https://github.com/Khaled-AlKhateeb'
           bgColor='var(--Text)'
           style={{ height: 35, width: 35 }}
