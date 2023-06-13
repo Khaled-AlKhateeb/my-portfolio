@@ -81,7 +81,7 @@ const data = [
     image: 'ramijuma-portfolio.png',
     production: 'May 2023',
     description: 'Visual Artist Portfolio, using React, Redux to save data, connected Firebase Storage to Firestore Database to render the images URLs into the webapp.',
-    skill: ["React.JS, Redux, Firebase"],
+    skill: ["React.JS", "Redux", "Firebase"],
     url: 'https://visual-illustrator-portfolio-rj.vercel.app/',
     urlSource: 'https://github.com/Khaled-AlKhateeb/visual-illustrator-portfolio-RJ',
   },
