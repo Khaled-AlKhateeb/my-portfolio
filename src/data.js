@@ -150,6 +150,17 @@ const data = [
     skill: ["React-Native"],
     url: 'https://drive.google.com/file/d/1gz-KyRek6d9_cOvRttYEugGk0Xk-18f8/view',
     urlSource: 'https://github.com/Khaled-AlKhateeb/flappybird_clone',
+  },
+  {
+    id: 15,
+    type: 'webapp',
+    name: 'Visual Artist Portfolio',
+    image: 'ramijuma-portfolio.png',
+    production: 'May 2023',
+    description: 'Visual Artist Portfolio, using React, Redux to save data, connected Firebase Storage to Firestore Database to render the images URLs into the webapp.',
+    skill: ["React.JS, Redux, Firebase"],
+    url: 'https://visual-illustrator-portfolio-rj.vercel.app/',
+    urlSource: 'https://github.com/Khaled-AlKhateeb/visual-illustrator-portfolio-RJ',
   }
 ];
 
