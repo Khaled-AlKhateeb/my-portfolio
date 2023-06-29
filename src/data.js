@@ -77,7 +77,7 @@ const data = [
   {
     id: 15,
     type: 'webapp',
-    name: 'Visual Artist Portfolio',
+    name: 'Digital Artist Portfolio',
     image: 'ramijuma-portfolio.png',
     production: 'May 2023',
     description: 'Visual Artist Portfolio, using React, Redux to save data, connected Firebase Storage to Firestore Database to render the images URLs into the webapp, giving the user the ability to upload, delete and order both categories and images on which to appear first.',
